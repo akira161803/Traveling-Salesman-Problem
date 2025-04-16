@@ -11,9 +11,6 @@ void generateAndSave(const string& filename, int n) {
         cerr << "ファイルオープン失敗: " << filename << endl;
         return;
     }
-
-
-    
     
 
     random_device rd;
