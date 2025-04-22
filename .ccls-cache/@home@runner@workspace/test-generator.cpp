@@ -4,9 +4,6 @@
 #include <ctime>
 using namespace std;
 
-
-k;
-
 int main() {
     const int xMin = 0, xMax = 100;
     const int yMin = 0, yMax = 100;
