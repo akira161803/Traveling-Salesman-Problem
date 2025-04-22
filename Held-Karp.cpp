@@ -19,7 +19,7 @@ double d(const City &a, const City &b)
 
 double tsp(int n, const vector<vector<double>> &dist)
 {
-    const double INF = 1e18; 
+    const double INF = 1e18;
     int N = 1 << n;
     vector<vector<double>> dp(N, vector<double>(n, INF));
     dp[1][0] = 0; // スタートは都市0
@@ -53,7 +53,6 @@ double tsp(int n, const vector<vector<double>> &dist)
 
 int main()
 {
-    
     // ファイル読み込み
     string filename;
     cin >> filename;
@@ -64,14 +63,6 @@ int main()
         cerr << "ファイルが開けません。" << endl;
         return 1;
     }
-
-    // // ファイルからxとyを読み込む
-    // int x, y;
-    // vector<pair<int, int>> cities;
-    // while (inputFile >> x >> y)
-    // {
-    //     cities.emplace_back(x, y);
-    // }
 
     City c;
     vector<City> cities;
@@ -93,10 +84,7 @@ int main()
         }
     }
 
-    int result = tsp(n, dist);
-
-    cout << result << endl;
+    cout << tsp(n, dist) << endl;
 
     return 0;
 }
-
