@@ -70,8 +70,8 @@ void showTour(const vector<int>& tour) {
 }
 
 int main() {
-    vector<string> filenames = {"cities_50.txt", "cities_100.txt"};
-    // vector<string> filenames = {"cities1.txt", "cities2.txt"};
+    // vector<string> filenames = {"50-2.txt"};
+    vector<string> filenames = {"cities1.txt", "cities2.txt", "cities3.txt", "50-2.txt"};
 
     for (const auto& fname : filenames) {
         vector<City> cities;
